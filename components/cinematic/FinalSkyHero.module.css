@@ -1,0 +1,66 @@
+/* ============================================================================
+   The first piece of interface.
+
+   Twelve and a half seconds of scale and motion, and then silence. The copy is
+   deliberately the least experimental thing in the film: one eyebrow, one
+   heading broken by hand, one subtitle. Anything more inventive here would be
+   competing with a planet.
+   ========================================================================== */
+
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  padding: 20vh 6vw 0;
+}
+
+.inner {
+  max-width: 70vw;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(17, 19, 21, 0.55);
+  margin-bottom: clamp(14px, 1.8vh, 22px);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.heading {
+  margin: 0;
+  font-size: clamp(64px, 8vw, 138px);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  color: #111315;
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.heading span {
+  display: block;
+}
+
+.subtitle {
+  margin: clamp(24px, 3.2vh, 30px) 0 0;
+  max-width: 560px;
+  font-size: clamp(18px, 1.35vw, 21px);
+  font-weight: 400;
+  line-height: 1.45;
+  letter-spacing: -0.006em;
+  color: rgba(17, 19, 21, 0.62);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+@media (max-width: 860px) {
+  .root { padding: 20vh 24px 0; }
+  .inner { max-width: none; }
+  .heading { font-size: clamp(48px, 13vw, 76px); }
+  .subtitle { font-size: 17px; max-width: none; }
+}

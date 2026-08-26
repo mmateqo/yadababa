@@ -1,0 +1,104 @@
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-chrome);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(18px, 2.2vw, 32px) var(--rail);
+  color: var(--nav-ink, #ffffff);
+  text-shadow: var(--nav-halo, none);
+  pointer-events: none;
+}
+
+.root svg {
+  filter: drop-shadow(0 1px 10px rgba(8, 22, 36, 0.28));
+}
+
+.root > * { pointer-events: auto; }
+
+/* While the menu is open the header is the only way out of it, so it rises
+   above the sheet and stops following the environment underneath. */
+.overMenu {
+  z-index: var(--z-chrome-over);
+  color: rgba(255, 255, 255, 0.94);
+  text-shadow: none;
+}
+.overMenu svg { filter: none; }
+
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand .markWrap { display: inline-flex; }
+
+/* When the mark leaves for the footer the wordmark closes the gap it left,
+   rather than sitting next to a hole. Transform, not margin: this must not
+   reflow the header while the page is moving. */
+.word {
+  display: block;
+  overflow: hidden;
+  margin-left: 13px;
+  transition: transform 620ms var(--e-swift);
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+}
+
+.word span {
+  display: block;
+  font-size: 15px;
+  font-weight: 560;
+  letter-spacing: 0.2em;
+  text-indent: 0.2em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: clamp(18px, 2.4vw, 38px);
+}
+
+
+
+
+:global(html[data-shark-away="true"]) .markWrap { visibility: hidden; }
+:global(html[data-shark-away="true"]) .word { transform: translateX(-39px); }
+
+.menuBtn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menuBtn .bars {
+  position: relative;
+  width: 17px;
+  height: 9px;
+  flex: none;
+}
+
+.menuBtn .bars i {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: currentColor;
+  transform-origin: center;
+  transition: transform 420ms var(--e-swift), opacity 200ms linear;
+}
+.menuBtn .bars i:first-child { top: 0; }
+.menuBtn .bars i:last-child { bottom: 0; }
+
+.menuBtn:hover .bars i:first-child { transform: translateY(1px); }
+.menuBtn:hover .bars i:last-child { transform: translateY(-1px); }
+
+/* must outrank the hover rule above it */
+.menuBtn.open .bars i:first-child { transform: translateY(4px) rotate(45deg); }
+.menuBtn.open .bars i:last-child { transform: translateY(-4px) rotate(-45deg); }

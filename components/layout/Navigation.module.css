@@ -1,0 +1,110 @@
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-overlay);
+  color: var(--on-dark-1);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.open {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.sheet {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 90% at 82% -10%, rgba(24, 62, 90, 0.5), transparent 62%),
+    linear-gradient(180deg, #070d13 0%, #04080c 58%, #01060a 100%);
+  clip-path: inset(0 0 100% 0);
+  will-change: clip-path;
+}
+
+.inner {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: clamp(96px, 13vh, 168px) var(--rail) clamp(28px, 4vh, 52px);
+}
+
+.list {
+  --menu-fs: clamp(46px, 8.4vw, 128px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(2px, 0.4vh, 8px);
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(14px, 2vw, 34px);
+  width: fit-content;
+}
+
+.item .idx {
+  opacity: 0.34;
+  /* sits on the cap line of the label beside it, not on its baseline */
+  margin-top: calc(var(--menu-fs) * 0.19);
+}
+
+.mask {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+}
+
+.itemLabel {
+  display: block;
+  transform: translate3d(0, 110%, 0);
+  will-change: transform;
+  font-size: var(--menu-fs);
+  line-height: 1.0;
+  letter-spacing: -0.045em;
+  font-weight: 500;
+  color: var(--on-dark-1);
+  transition: color 300ms var(--e-out), opacity 300ms var(--e-out);
+}
+
+.item:hover .itemLabel { color: #fff; }
+
+.list:hover .item:not(:hover) .itemLabel { opacity: 0.34; }
+
+.foot {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(20px, 3vh, 34px);
+  align-items: end;
+  opacity: 0;
+}
+
+@media (min-width: 860px) {
+  .foot {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 30vw);
+    gap: clamp(24px, 4vw, 80px);
+  }
+}
+
+.footNote {
+  color: var(--on-dark-2);
+  max-width: 42ch;
+}
+
+.footLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 26px;
+  color: var(--on-dark-2);
+}
+
+.rule {
+  grid-column: 1 / -1;
+  height: 1px;
+  background: var(--hair-dark, rgba(255, 255, 255, 0.14));
+  transform: scaleX(0);
+  transform-origin: left;
+}

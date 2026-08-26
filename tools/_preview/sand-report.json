@@ -1,0 +1,58 @@
+[
+  {
+    "file": "/Users/mateomorina/Downloads/selora/public/textures/land/sand-albedo.webp",
+    "from": "sand_02_Diffuse",
+    "px": "2048x2048",
+    "ch": 3,
+    "kb": 1397
+  },
+  {
+    "file": "/Users/mateomorina/Downloads/selora/public/textures/land/sand-normal.webp",
+    "from": "sand_02_nor_gl",
+    "px": "2048x2048",
+    "ch": 3,
+    "kb": 1725
+  },
+  {
+    "file": "/Users/mateomorina/Downloads/selora/public/textures/land/sand-rough.webp",
+    "from": "sand_02_Rough",
+    "px": "2048x2048",
+    "ch": 3,
+    "kb": 124
+  },
+  {
+    "file": "/Users/mateomorina/Downloads/selora/public/textures/land/sand-ao.webp",
+    "from": "sand_02_AO",
+    "px": "2048x2048",
+    "ch": 3,
+    "kb": 522
+  },
+  {
+    "file": "/Users/mateomorina/Downloads/selora/public/textures/land/sand-03-albedo.webp",
+    "from": "sand_03_Diffuse",
+    "px": "2048x2048",
+    "ch": 3,
+    "kb": 890
+  },
+  {
+    "file": "/Users/mateomorina/Downloads/selora/public/textures/land/sand-03-normal.webp",
+    "from": "sand_03_nor_gl",
+    "px": "2048x2048",
+    "ch": 3,
+    "kb": 656
+  },
+  {
+    "file": "/Users/mateomorina/Downloads/selora/public/textures/land/sand-03-rough.webp",
+    "from": "sand_03_Rough",
+    "px": "2048x2048",
+    "ch": 3,
+    "kb": 13
+  },
+  {
+    "file": "/Users/mateomorina/Downloads/selora/public/textures/land/sand-03-ao.webp",
+    "from": "sand_03_AO",
+    "px": "2048x2048",
+    "ch": 3,
+    "kb": 446
+  }
+]

@@ -1,0 +1,16 @@
+/* ============================================================================
+   The field.
+
+   One element, one colour, from the first frame to the last. It is black
+   because the film starts in space and blue because it ends in air; it is never
+   swapped, never crossfaded, and there is no second background anywhere in the
+   document. The blue at the end is this element, later.
+   ========================================================================== */
+
+.root {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-color: #000;
+  pointer-events: none;
+}

@@ -1,0 +1,121 @@
+/* ============================================================================
+   SELORA — typography
+   One grotesque (Geist) plus its mono companion for micro-interface labels.
+   Display sizes are cinematic and intentionally exceed product-UI scale.
+   ========================================================================== */
+
+:root {
+  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Helvetica, Arial, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* display ladder */
+  --fs-hero:      clamp(40px, 10.2vw, 176px);
+  /* The hero's own display size — larger than anything else in the site, and
+     the reason a beat reads as a title card rather than as a heading. */
+  --fs-beat:      clamp(52px, 10.5vw, 180px);
+  --fs-display:   clamp(38px, 8.2vw, 140px);
+  --fs-headline:  clamp(38px, 6vw, 100px);
+  --fs-title:     clamp(28px, 3.6vw, 58px);
+  --fs-lead:      clamp(19px, 1.55vw, 26px);
+  --fs-body:      clamp(15px, 1.05vw, 17px);
+  --fs-small:     13px;
+  --fs-micro:     11px;
+
+  --lh-hero:     0.86;
+  --lh-display:  0.90;
+  --lh-headline: 0.94;
+  --lh-title:    1.02;
+  --lh-body:     1.52;
+
+  --tr-hero:     -0.055em;
+  --tr-display:  -0.045em;
+  --tr-headline: -0.038em;
+  --tr-title:    -0.028em;
+  --tr-body:     -0.011em;
+  --tr-micro:     0.13em;
+}
+
+/* ── display -------------------------------------------------------------- */
+.t-hero {
+  font-family: var(--font-sans);
+  font-size: var(--fs-hero);
+  line-height: var(--lh-hero);
+  letter-spacing: var(--tr-hero);
+  font-weight: 500;
+  text-wrap: balance;
+}
+.t-display {
+  font-family: var(--font-sans);
+  font-size: var(--fs-display);
+  line-height: var(--lh-display);
+  letter-spacing: var(--tr-display);
+  font-weight: 500;
+}
+.t-headline {
+  font-family: var(--font-sans);
+  font-size: var(--fs-headline);
+  line-height: var(--lh-headline);
+  letter-spacing: var(--tr-headline);
+  font-weight: 500;
+}
+.t-title {
+  font-family: var(--font-sans);
+  font-size: var(--fs-title);
+  line-height: var(--lh-title);
+  letter-spacing: var(--tr-title);
+  font-weight: 500;
+}
+
+/* One class, used by every beat in the hero.
+   The size comes from the beat itself (lib/beats.ts) — each act in the site has
+   its own display size, largest at the top and smaller as the world arrives,
+   because by the ground the world no longer needs announcing. `--beat-fit` is
+   the correction the layout applies when an authored line is wider than the
+   measure it was given; it is normally 1. */
+.t-beat {
+  font-family: var(--font-sans);
+  font-size: calc(var(--beat-size, var(--fs-beat)) * var(--beat-fit, 1));
+  line-height: 0.94;
+  letter-spacing: -0.036em;
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+/* ── reading -------------------------------------------------------------- */
+.t-lead {
+  font-size: var(--fs-lead);
+  line-height: 1.42;
+  letter-spacing: -0.016em;
+  font-weight: 400;
+}
+.t-body {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--tr-body);
+  font-weight: 400;
+}
+
+/* ── micro interface ------------------------------------------------------ */
+.t-label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-micro);
+  line-height: 1;
+  letter-spacing: var(--tr-micro);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-feature-settings: "tnum" 1;
+}
+.t-nav {
+  font-family: var(--font-sans);
+  font-size: var(--fs-small);
+  line-height: 1;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.t-num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}

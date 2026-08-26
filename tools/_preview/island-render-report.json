@@ -1,0 +1,59 @@
+[
+  {
+    "name": "grass-medium-01",
+    "meshes": [
+      "grass_medium_01_small_a_LOD0",
+      "grass_medium_01_tall_a_LOD0",
+      "grass_medium_01_mid_a_LOD0",
+      "grass_medium_01_large_a_LOD0",
+      "grass_medium_01_large_c_LOD0"
+    ],
+    "materials": [
+      {
+        "name": "grass_medium_01",
+        "type": "MeshStandardMaterial",
+        "transparent": false,
+        "alphaTest": 0.35,
+        "side": 2,
+        "slots": {
+          "map": {
+            "img": "2048x2048",
+            "cs": "srgb"
+          },
+          "normalMap": {
+            "img": "1024x1024",
+            "cs": ""
+          },
+          "roughnessMap": {
+            "img": "1024x1024",
+            "cs": ""
+          },
+          "metalnessMap": {
+            "img": "1024x1024",
+            "cs": ""
+          },
+          "aoMap": {
+            "img": "1024x1024",
+            "cs": ""
+          }
+        }
+      }
+    ],
+    "size": [
+      1.851,
+      0.323,
+      0.531
+    ],
+    "min": [
+      -0.958,
+      0,
+      -0.283
+    ],
+    "max": [
+      0.892,
+      0.323,
+      0.248
+    ],
+    "tris": 15777
+  }
+]

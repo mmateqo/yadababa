@@ -1,0 +1,44 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--logo-gap, 11px);
+  color: inherit;
+  line-height: 1;
+}
+
+.mark {
+  width: var(--logo-mark, 22px);
+  height: var(--logo-mark, 22px);
+  flex: none;
+  display: block;
+  overflow: visible;
+}
+
+.mark path {
+  fill: currentColor;
+}
+
+.word {
+  display: flex;
+  overflow: hidden;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+
+.word span {
+  display: block;
+  font-size: var(--logo-size, 15px);
+  font-weight: 560;
+  letter-spacing: var(--logo-tracking, 0.2em);
+  text-indent: var(--logo-tracking, 0.2em); /* optical: kill the trailing gap */
+  text-transform: uppercase;
+  transform: translate3d(0, var(--logo-y, 0), 0);
+}
+
+.link:hover .mark {
+  transform: translate3d(2px, 0, 0);
+}
+
+.mark {
+  transition: transform 420ms var(--e-out);
+}

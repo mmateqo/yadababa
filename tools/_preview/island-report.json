@@ -1,0 +1,430 @@
+[
+  {
+    "slug": "island_tree_01",
+    "file": "/Users/mateomorina/Downloads/selora/public/models/island-tree-01.glb",
+    "bytes": 4132852,
+    "mb": 3.94,
+    "tris": 91926,
+    "bboxMin": [
+      -2.344,
+      -0.02,
+      -2.584
+    ],
+    "bboxMax": [
+      2.411,
+      5.007,
+      2.234
+    ],
+    "sizeM": [
+      4.755,
+      5.027,
+      4.818
+    ],
+    "meshes": [
+      "island_trees_01_blockout_cleaned"
+    ],
+    "materials": [
+      {
+        "name": "island_tree_01",
+        "alphaMode": "OPAQUE",
+        "alphaCutoff": 0.5,
+        "doubleSided": true,
+        "slots": {
+          "normalTexture": "island_tree_01_branches_nor_gl",
+          "baseColorTexture": "island_tree_01_branches_diff",
+          "metallicRoughnessTexture": "island_tree_01_branches_rough",
+          "occlusionTexture": "island_tree_01_branches_rough"
+        }
+      },
+      {
+        "name": "island_tree_01_leaves",
+        "alphaMode": "MASK",
+        "alphaCutoff": 0.4,
+        "doubleSided": true,
+        "slots": {
+          "normalTexture": "island_tree_01_branches_nor_gl",
+          "baseColorTexture": "island_tree_01_branches_diff",
+          "metallicRoughnessTexture": "island_tree_01_branches_rough",
+          "occlusionTexture": "island_tree_01_branches_rough"
+        }
+      },
+      {
+        "name": "island_tree_01_branches",
+        "alphaMode": "OPAQUE",
+        "alphaCutoff": 0.5,
+        "doubleSided": true,
+        "slots": {
+          "normalTexture": "island_tree_01_branches_nor_gl",
+          "baseColorTexture": "island_tree_01_branches_diff",
+          "metallicRoughnessTexture": "island_tree_01_branches_rough",
+          "occlusionTexture": "island_tree_01_branches_rough"
+        }
+      }
+    ],
+    "textures": [
+      {
+        "name": "island_tree_01_nor_gl",
+        "mime": "image/webp",
+        "kb": 265,
+        "slots": [
+          "normalTexture"
+        ]
+      },
+      {
+        "name": "island_tree_01_diff",
+        "mime": "image/webp",
+        "kb": 299,
+        "slots": [
+          "baseColorTexture"
+        ]
+      },
+      {
+        "name": "island_tree_01_rough",
+        "mime": "image/webp",
+        "kb": 89,
+        "slots": [
+          "metallicRoughnessTexture",
+          "occlusionTexture"
+        ]
+      },
+      {
+        "name": "island_tree_01_leaves_nor_gl",
+        "mime": "image/webp",
+        "kb": 39,
+        "slots": [
+          "normalTexture"
+        ]
+      },
+      {
+        "name": "island_tree_01_leaves_diff-island_tree_01_leaves_alpha",
+        "mime": "image/webp",
+        "kb": 142,
+        "slots": [
+          "baseColorTexture"
+        ]
+      },
+      {
+        "name": "island_tree_01_leaves_rough",
+        "mime": "image/webp",
+        "kb": 59,
+        "slots": [
+          "metallicRoughnessTexture",
+          "occlusionTexture"
+        ]
+      },
+      {
+        "name": "island_tree_01_branches_nor_gl",
+        "mime": "image/webp",
+        "kb": 101,
+        "slots": [
+          "normalTexture"
+        ]
+      },
+      {
+        "name": "island_tree_01_branches_diff",
+        "mime": "image/webp",
+        "kb": 104,
+        "slots": [
+          "baseColorTexture"
+        ]
+      },
+      {
+        "name": "island_tree_01_branches_rough",
+        "mime": "image/webp",
+        "kb": 14,
+        "slots": [
+          "metallicRoughnessTexture",
+          "occlusionTexture"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "island_tree_02",
+    "file": "/Users/mateomorina/Downloads/selora/public/models/island-tree-02.glb",
+    "bytes": 3338788,
+    "mb": 3.18,
+    "tris": 67898,
+    "bboxMin": [
+      -2.052,
+      -0.017,
+      -1.114
+    ],
+    "bboxMax": [
+      2.155,
+      3.389,
+      2.957
+    ],
+    "sizeM": [
+      4.208,
+      3.406,
+      4.071
+    ],
+    "meshes": [
+      "mesh.001"
+    ],
+    "materials": [
+      {
+        "name": "island_tree_02",
+        "alphaMode": "OPAQUE",
+        "alphaCutoff": 0.5,
+        "doubleSided": true,
+        "slots": {
+          "normalTexture": "island_tree_02_branches_nor_gl",
+          "baseColorTexture": "island_tree_02_branches_diff",
+          "metallicRoughnessTexture": "island_tree_02_branches_rough",
+          "occlusionTexture": "island_tree_02_branches_rough"
+        }
+      },
+      {
+        "name": "island_tree_02_leaves",
+        "alphaMode": "MASK",
+        "alphaCutoff": 0.4,
+        "doubleSided": true,
+        "slots": {
+          "normalTexture": "island_tree_02_branches_nor_gl",
+          "baseColorTexture": "island_tree_02_branches_diff",
+          "metallicRoughnessTexture": "island_tree_02_branches_rough",
+          "occlusionTexture": "island_tree_02_branches_rough"
+        }
+      },
+      {
+        "name": "island_tree_02_branches",
+        "alphaMode": "OPAQUE",
+        "alphaCutoff": 0.5,
+        "doubleSided": true,
+        "slots": {
+          "normalTexture": "island_tree_02_branches_nor_gl",
+          "baseColorTexture": "island_tree_02_branches_diff",
+          "metallicRoughnessTexture": "island_tree_02_branches_rough",
+          "occlusionTexture": "island_tree_02_branches_rough"
+        }
+      }
+    ],
+    "textures": [
+      {
+        "name": "island_tree_02_nor_gl",
+        "mime": "image/webp",
+        "kb": 242,
+        "slots": [
+          "normalTexture"
+        ]
+      },
+      {
+        "name": "island_tree_02_diff",
+        "mime": "image/webp",
+        "kb": 264,
+        "slots": [
+          "baseColorTexture"
+        ]
+      },
+      {
+        "name": "island_tree_02_rough",
+        "mime": "image/webp",
+        "kb": 75,
+        "slots": [
+          "metallicRoughnessTexture",
+          "occlusionTexture"
+        ]
+      },
+      {
+        "name": "island_tree_02_leaves_nor_gl",
+        "mime": "image/webp",
+        "kb": 39,
+        "slots": [
+          "normalTexture"
+        ]
+      },
+      {
+        "name": "island_tree_02_leaves_diff-island_tree_02_leaves_alpha",
+        "mime": "image/webp",
+        "kb": 142,
+        "slots": [
+          "baseColorTexture"
+        ]
+      },
+      {
+        "name": "island_tree_02_leaves_rough",
+        "mime": "image/webp",
+        "kb": 59,
+        "slots": [
+          "metallicRoughnessTexture",
+          "occlusionTexture"
+        ]
+      },
+      {
+        "name": "island_tree_02_branches_nor_gl",
+        "mime": "image/webp",
+        "kb": 101,
+        "slots": [
+          "normalTexture"
+        ]
+      },
+      {
+        "name": "island_tree_02_branches_diff",
+        "mime": "image/webp",
+        "kb": 104,
+        "slots": [
+          "baseColorTexture"
+        ]
+      },
+      {
+        "name": "island_tree_02_branches_rough",
+        "mime": "image/webp",
+        "kb": 14,
+        "slots": [
+          "metallicRoughnessTexture",
+          "occlusionTexture"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "grass_medium_01",
+    "file": "/Users/mateomorina/Downloads/selora/public/models/grass-medium-01.glb",
+    "bytes": 1775840,
+    "mb": 1.69,
+    "tris": 24730,
+    "bboxMin": [
+      -0.158,
+      0,
+      -0.163
+    ],
+    "bboxMax": [
+      0.158,
+      0.323,
+      0.163
+    ],
+    "sizeM": [
+      0.317,
+      0.323,
+      0.327
+    ],
+    "meshes": [
+      "Plane.037",
+      "Plane.038",
+      "Plane.039",
+      "Plane.042",
+      "Plane.043",
+      "Plane.045",
+      "Plane.047",
+      "Plane.048",
+      "Plane.050",
+      "Plane.051",
+      "Plane.053",
+      "Plane.054",
+      "Plane.055",
+      "Plane.056",
+      "Plane.057",
+      "Plane.058",
+      "Plane.059"
+    ],
+    "materials": [
+      {
+        "name": "grass_medium_01",
+        "alphaMode": "MASK",
+        "alphaCutoff": 0.35,
+        "doubleSided": true,
+        "slots": {
+          "normalTexture": "grass_medium_01_nor_gl",
+          "baseColorTexture": "grass_medium_01_diff-grass_medium_01_alpha",
+          "metallicRoughnessTexture": "grass_medium_01_rough",
+          "occlusionTexture": "grass_medium_01_rough"
+        }
+      }
+    ],
+    "textures": [
+      {
+        "name": "grass_medium_01_nor_gl",
+        "mime": "image/webp",
+        "kb": 220,
+        "slots": [
+          "normalTexture"
+        ]
+      },
+      {
+        "name": "grass_medium_01_diff-grass_medium_01_alpha",
+        "mime": "image/webp",
+        "kb": 831,
+        "slots": [
+          "baseColorTexture"
+        ]
+      },
+      {
+        "name": "grass_medium_01_rough",
+        "mime": "image/webp",
+        "kb": 105,
+        "slots": [
+          "metallicRoughnessTexture",
+          "occlusionTexture"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "coast_land_rocks_02",
+    "file": "/Users/mateomorina/Downloads/selora/public/models/coast-land-rocks-02.glb",
+    "bytes": 1826584,
+    "mb": 1.74,
+    "tris": 39992,
+    "bboxMin": [
+      -2.448,
+      -0.151,
+      -4.998
+    ],
+    "bboxMax": [
+      2.44,
+      1.241,
+      5.457
+    ],
+    "sizeM": [
+      4.888,
+      1.392,
+      10.454
+    ],
+    "meshes": [
+      "Plane"
+    ],
+    "materials": [
+      {
+        "name": "coast_land_rocks_02",
+        "alphaMode": "OPAQUE",
+        "alphaCutoff": 0.5,
+        "doubleSided": true,
+        "slots": {
+          "normalTexture": "coast_land_rocks_02_nor_gl",
+          "baseColorTexture": "coast_land_rocks_02_diff",
+          "metallicRoughnessTexture": "coast_land_rocks_02_rough",
+          "occlusionTexture": "coast_land_rocks_02_rough"
+        }
+      }
+    ],
+    "textures": [
+      {
+        "name": "coast_land_rocks_02_nor_gl",
+        "mime": "image/webp",
+        "kb": 315,
+        "slots": [
+          "normalTexture"
+        ]
+      },
+      {
+        "name": "coast_land_rocks_02_diff",
+        "mime": "image/webp",
+        "kb": 743,
+        "slots": [
+          "baseColorTexture"
+        ]
+      },
+      {
+        "name": "coast_land_rocks_02_rough",
+        "mime": "image/webp",
+        "kb": 127,
+        "slots": [
+          "metallicRoughnessTexture",
+          "occlusionTexture"
+        ]
+      }
+    ]
+  }
+]

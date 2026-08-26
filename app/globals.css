@@ -1,0 +1,78 @@
+@import url("../styles/tokens.css");
+@import url("../styles/typography.css");
+@import url("../styles/utilities.css");
+
+/* ============================================================================
+   reset — narrow, opinionated
+   ========================================================================== */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: auto;
+}
+
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol { list-style: none; }
+
+html, body { height: 100%; }
+
+/* Black from the very first paint. The film opens on #000000 and there is no
+   preloader in front of it, so any other value here — even for one frame — is a
+   flash the viewer sees before the site has said anything. */
+html { background: #000; }
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--tr-body);
+  color: var(--on-dark-1);
+  background: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  /* There is nothing below the hero. The document is one viewport and it does
+     not scroll — this is a film, not a page with a film at the top. */
+  overflow: hidden;
+  height: 100%;
+  height: 100dvh;
+}
+
+img, svg, video, canvas { display: block; max-width: 100%; }
+img { height: auto; }
+
+a { color: inherit; text-decoration: none; }
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+::selection { background: rgba(255,255,255,0.18); color: #fff; }
+
+/* ============================================================================
+   focus — visible, never ugly
+   ========================================================================== */
+:focus { outline: none; }
+:focus-visible {
+  outline: 1.5px solid currentColor;
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

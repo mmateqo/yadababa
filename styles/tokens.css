@@ -1,0 +1,36 @@
+/* ============================================================================
+   SELORA — design tokens
+
+   The site is one fourteen-second shot with a wordmark, a menu and two lines of
+   type over it. There is no interface to build a palette for, so there is no
+   palette: the film's colour lives in lib/cinematic.ts, where it is a function
+   of time and can be interpolated, and putting swatches of it here as well
+   would make two sources of truth for the same blue.
+
+   What survives is what the chrome genuinely uses — two levels of ink on a dark
+   ground, one hairline, one easing pair, one gutter, one z ladder. Nine values.
+   Before v6 there were seventy-eight, of which sixty-nine were referenced
+   nowhere: a neutral ramp, a sky ramp, a sand ramp, a lagoon, an abyss and a
+   radius ladder, all left behind by scopes the site no longer has.
+   ========================================================================== */
+
+:root {
+  /* ── text contrast: two levels, one ground ────────────────────────────── */
+  --on-dark-1: rgba(255, 255, 255, 0.94);
+  --on-dark-2: rgba(255, 255, 255, 0.66);
+
+  /* ── hairline (deliberately almost nothing) ───────────────────────────── */
+  --hair-dark: rgba(255, 255, 255, 0.14);
+
+  /* ── motion ───────────────────────────────────────────────────────────── */
+  --e-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --e-swift: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ── layout ───────────────────────────────────────────────────────────── */
+  --rail: clamp(16px, 2.6vw, 44px);
+
+  /* ── z ladder ─────────────────────────────────────────────────────────── */
+  --z-chrome: 60;
+  --z-overlay: 80;
+  --z-chrome-over: 88;
+}
